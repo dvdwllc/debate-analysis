@@ -4,6 +4,9 @@ import re
 from requests_futures.sessions import FuturesSession
 import dill
 
+# BIG PROBLEM: 
+# This does not differentiate between speakers with same last name!
+# ex: Bush, Clinton... Need to fix
 
 def parse_speakers_and_quotes(page):
     """

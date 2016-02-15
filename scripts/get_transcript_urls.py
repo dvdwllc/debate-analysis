@@ -26,7 +26,7 @@ for i in range(len(debate_links)):
         
 print 'got %i urls, %i listings with no link.' % (len(transcript_urls), n_sans_link)
 
-outfile = 'debate_links.txt'
+outfile = '../txt/debate_links.txt'
 with open(outfile, 'wb') as out:
     for i in transcript_urls:
         out.write(i)

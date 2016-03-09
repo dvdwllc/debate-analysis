@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import requests
 import re
 from requests_futures.sessions import FuturesSession
 import dill

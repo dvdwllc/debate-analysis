@@ -43,7 +43,7 @@ def parse_speakers_and_quotes(page, year):
 if __name__ == '__main__':
     
     transcript_urls = [] # read urls from file
-    with open('debate_links.txt', 'rb') as infile:
+    with open('../txt/debate_links.txt', 'rb') as infile:
         for line in infile.readlines():
             transcript_urls.append(line)
 
@@ -58,4 +58,4 @@ if __name__ == '__main__':
     debate_transcripts = [parse_speakers_and_quotes(future.result(), date) for future, date in results]
 
     # dump it to a dill file so we don't need to blast UCSB's servers again
-    dill.dump(debate_transcripts, open('debate_transcripts_list.dill', 'wb'))
+    dill.dump(debate_transcripts, open('../dills/debate_transcripts_list.dill', 'wb'))

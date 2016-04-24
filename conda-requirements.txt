@@ -1,6 +1,6 @@
 numpy
 matplotlib
 scikit-learn
-pandas
+seaborn
 Flask
 nomkl

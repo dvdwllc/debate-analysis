@@ -1,6 +1,0 @@
-nomkl
-numpy
-matplotlib
-scikit-learn
-seaborn
-Flask

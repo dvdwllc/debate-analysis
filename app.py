@@ -86,4 +86,5 @@ def send_file(filename):
 
 
 if __name__ == '__main__':
+    # run it
     app.run(debug=False)

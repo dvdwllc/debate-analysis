@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib
@@ -7,8 +6,6 @@ matplotlib.rcParams.update({'font.size': 22})
 matplotlib.rc('xtick', labelsize=22)
 matplotlib.rc('ytick', labelsize=22)
 
-spectrum = pd.read_csv('txt/huffpo_spectrum.txt',
-                       names=['firstname','lastname','rating'])
 
 def lower2(s):
     return s.lower()
@@ -23,10 +20,7 @@ def plot_ideology(ideology, title='prediction'):
     # candidates and ratings to plot
     bignames = ('Your text', 'Sanders', 'Clinton',
                 'Christie', 'Trump', 'Rubio', 'Cruz')
-    ratings = [
-        spectrum[spectrum['lastname'] == i]['rating'].values[0]
-        for i in bignames[1:]
-        ]
+    ratings = [-8.5, -6.8, 2.5, 4, 6.8, 8]
     y_pos = np.arange(len(bignames))+2
 
     cm = plt.get_cmap('RdBu')  # colormap

@@ -76,7 +76,7 @@ def index():
             'index.html',
             text=query_text,
             plot='query.png',
-            result = result
+            result=result
         )
 
 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/assets/ico/favicon.png">
+
+    <title>David C. Wallace</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="static/assets/css/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Politivec</a>
+        </div>
+      </div>
+    </div>
+
+
+	<div class="container">
+        <div class="row">
+			<br>
+			<div class="col-md-12">
+                <h2>
+                    Text vectorization and machine learning applied to the 2016 presidential debates
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Type or paste any political text into the form below, then click "Analyze Text" to view an estimated political ideology rating.
+                    <br>
+                    The longer the text, the more reliable the results.
+                </p>
+                <form action="." method="POST">
+                    <textarea name="query_text" cols="50" rows="5" ... ></textarea><br><br>
+                    <button type="submit" class="btn btn-default" aria-label="Left Align">Analyze Text</button>
+                </form>
+            </div>
+            <div class="col-md-6 centered">
+                <h2>Result: {{result}}</h2>
+                <img src="{{ url_for('send_file', filename=plot) }}" width="330px">
+            </div>
+        </div>
+
+        <div class="row">
+            <br><br>
+            <div class="col-md-12">
+                <h3>Your query was:</h3>
+                <p>
+                    "{{text}}"
+                </p>
+            </div>
+            <br><br>
+		</div><!-- row -->
+
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3><a href="http://davidcwallace.com/politivec_b1.html">Learn More</a></h3>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="static/assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

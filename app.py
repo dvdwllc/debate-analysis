@@ -58,7 +58,7 @@ def index():
     else:
         query_text = request.form['query_text'].strip('\n')  # read query
         ideology = predict_ideology(query_text)
-        
+
         print query_text
 
         if ideology < -5:
@@ -84,7 +84,8 @@ def index():
 
 @app.route('/img/<filename>')
 def send_file(filename):
-    return send_from_directory('static/img/', filename)
+    print 'sending!!'
+    return send_from_directory('/static/img/', filename)
 
 
 if __name__ == '__main__':

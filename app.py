@@ -58,6 +58,8 @@ def index():
     else:
         query_text = request.form['query_text'].strip('\n')  # read query
         ideology = predict_ideology(query_text)
+        
+        print query_text
 
         if ideology < -5:
             result = 'Very Liberal'

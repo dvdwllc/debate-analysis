@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib
-matplotlib.rcParams.update({'font.size': 22})
-matplotlib.rc('xtick', labelsize=22)
-matplotlib.rc('ytick', labelsize=22)
+#matplotlib.rcParams.update({'font.size': 22})
+#matplotlib.rc('xtick', labelsize=22)
+#matplotlib.rc('ytick', labelsize=22)
 import seaborn as sns
 
 

@@ -16,6 +16,7 @@ def plot_ideology(ideology, title='prediction'):
     plots predicted ideology on a -10 to 10 scale along with the values of
     several politicians for reference.
     """
+    print 'trying to plot'
 
     # candidates and ratings to plot
     bignames = ('Your text', 'Sanders', 'Clinton',

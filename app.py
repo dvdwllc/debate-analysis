@@ -77,7 +77,7 @@ def index():
         return render_template(
             'index.html',
             text=query_text,
-            plot='query.png',
+            plot='liberal.png',
             result=result
         )
 

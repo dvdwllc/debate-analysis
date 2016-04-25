@@ -15,6 +15,9 @@ def plot_ideology(ideology, title='prediction'):
     """
     plots predicted ideology on a -10 to 10 scale along with the values of
     several politicians for reference.
+
+
+    THERE IS A PROBLEM WITH HEROKU HERE. FIXXXXX
     """
     print 'trying to plot'
 

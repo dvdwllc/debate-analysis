@@ -70,7 +70,7 @@ def index():
         else:
             result = 'Very Conservative'
 
-        plot_ideology(ideology, 'query')  # produce plot
+        #plot_ideology(ideology, 'query')  # produce plot
 
         print query_text, ideology
 

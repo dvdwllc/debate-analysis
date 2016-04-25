@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 import matplotlib
 matplotlib.rcParams.update({'font.size': 22})
 matplotlib.rc('xtick', labelsize=22)
 matplotlib.rc('ytick', labelsize=22)
+import seaborn as sns
 
 
 def lower2(s):
@@ -38,6 +38,6 @@ def plot_ideology(ideology, title='prediction'):
     plt.plot([0, 0], [0, 10], '-', color='black')
     plt.xticks([])
     plt.subplots_adjust(left=0.2, right=0.95, top=0.95, bottom=0.01)
-    plt.savefig('static/img/%s.png' % title, transparent=True)
+    plt.savefig('/static/img/%s.png' % title, transparent=True)
     plt.clf()
     print 'successfully plotted!'

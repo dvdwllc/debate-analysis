@@ -85,7 +85,7 @@ def index():
 @app.route('/img/<filename>')
 def send_file(filename):
     print 'sending!!'
-    return send_from_directory('/static/img/', filename)
+    return send_from_directory('static/img/', filename)
 
 
 if __name__ == '__main__':

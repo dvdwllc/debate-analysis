@@ -40,3 +40,4 @@ def plot_ideology(ideology, title='prediction'):
     plt.subplots_adjust(left=0.2, right=0.95, top=0.95, bottom=0.01)
     plt.savefig('static/img/%s.png' % title, transparent=True)
     plt.clf()
+    print 'successfully plotted!'

@@ -70,21 +70,21 @@ def index():
         else:
             result = 'Very Conservative'
 
-        #plot_ideology(ideology, 'query')  # produce plot
+        plot_ideology(ideology, 'query')  # produce plot
 
         print query_text, ideology
 
         return render_template(
             'index.html',
             text=query_text,
-            plot='liberal.png',
+            plot='query.png',
             result=result
         )
 
 
 @app.route('/img/<filename>')
 def send_file(filename):
-    print 'sending!!'
+    # print 'sending!!'
     return send_from_directory('static/img/', filename)
 
 

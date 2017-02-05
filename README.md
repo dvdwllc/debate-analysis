@@ -1,0 +1,2 @@
+# debate-analysis
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4445b69dabb1469bad2f469854620e9f)](https://www.codacy.com/app/dvdwllc/debate-analysis?utm_source=github.com&utm_medium=referral&utm_content=dvdwllc/debate-analysis&utm_campaign=badger)
